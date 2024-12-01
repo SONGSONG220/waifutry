@@ -40,7 +40,7 @@ async def rm_sudo(update: Update, context: CallbackContext) -> None:
 
 async def sudo_list(update: Update, context: CallbackContext) -> None:
     user_id = update.effective_user.id
-    if user_id in sudo_users:
+    if user_id == OWNER_ID:
         sudo_users_cursor = sudo_collection.find({})
         sudo_list = await sudo_users_cursor.to_list(length=None)
         if sudo_list:
