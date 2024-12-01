@@ -38,8 +38,8 @@ async def start(update: Update, context: CallbackContext) -> None:
   Tᴀᴘ ᴏɴ "Hᴇʟᴘ" ғᴏʀ ᴍᴏʀᴇ ᴄᴏᴍᴍᴀɴᴅs."""
         keyboard = [
             [InlineKeyboardButton("➕ 𝖠𝖽𝖽 𝖬𝖾 I𝗇 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url=f'http://t.me/nudeXcatcherbot?startgroup=new')],
-            [InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 🍁", url=f'https://t.me/blade_x_support'),
-             InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📈", url=f'https://t.me/blade_x_community')],
+            [InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 🍁", url=f'https://t.me/PiratesMainchat'),
+             InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📈", url=f'https://t.me/PiratesBotRepo')],
             [InlineKeyboardButton("𝖧𝖾𝗅𝗉 ⚙️", callback_data='help')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -51,14 +51,16 @@ async def start(update: Update, context: CallbackContext) -> None:
         photo_url = random.choice(PHOTO_URL)
         keyboard = [
             [InlineKeyboardButton("➕ 𝖠𝖽𝖽 𝖬𝖾 I𝗇 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url=f'http://t.me/capture_Waifu_Bot?startgroup=new')],
-            [InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 🍁", url=f'https://t.me/capture_your_WH_gc'),
-             InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📈", url=f'https://t.me/luffy_bots')],
+            [InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 🍁", url=f'https://t.me/PiratesMainchat'),
+             InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📈", url=f'https://t.me/PiratesBotRepo')],
             [InlineKeyboardButton("𝖧𝖾𝗅𝗉 ⚙️", callback_data='help')]
         ]
 
         reply_markup = InlineKeyboardMarkup(keyboard)
-        await context.bot.send_photo(chat_id=update.effective_chat.id, photo=photo_url, caption=caption,
-                                     reply_markup=reply_markup)
+        await context.bot.send_photo(chat_id=update.effective_chat.id, photo=photo_url, caption="""***Hello!*** 👋  
+         I am alive and ready to send husbandu to your group! 🎴  
+        Add me to your group and let's start the waifu collection journey! 🗿"""
+         ,reply_markup=reply_markup )
 
 
 async def button(update: Update, context: CallbackContext) -> None:
