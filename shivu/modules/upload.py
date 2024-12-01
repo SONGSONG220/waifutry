@@ -24,13 +24,13 @@ format:- /upload reply character-name anime-name rarity-number
 
 use rarity number accordingly rarity Map
 
-rarity_map = {1: "💫 Rare", 2: "🌿 Medium", 3: "🦄 Legendary", 4:"💮 Special Edition", 5: "🔮 Limited Edition",6: "🎉 Festival", 7: "🍂 Seasonal", 8: "🎐 Celestial"}
+rarity_map = {1: "⚪ Common", 2: "🟠 Rare", 3: "🟡 Legendary", 4: "🟢 Medium", 5: "💠 Cosmic",6: "💮 Exclusive", 7: "🔮 Limited Edition"}
 """
 
 
 # Define the channel ID and rarity map
 CHARA_CHANNEL_ID = -1002412957777
-rarity_map = {1: "💫 Rare", 2: "🌿 Medium", 3: "🦄 Legendary", 4:"💮 Special Edition", 5: "🔮 Limited Edition", 6: "🎉 Festival", 7: "🍂 Seasonal", 8: "🎐 Celestial"}
+rarity_map = {1: "⚪ Common", 2: "🟠 Rare", 3: "🟡 Legendary", 4: "🟢 Medium", 5: "💠 Cosmic",6: "💮 Exclusive", 7: "🔮 Limited Edition"}
 
 
 from asyncio import Lock
@@ -170,7 +170,7 @@ async def updates(update: Update, context: CallbackContext) -> None:
         if args[1] in ['name', 'anime']:
             new_value = args[2].replace('-', ' ').title()
         elif args[1] == 'rarity':
-            rarity_map = {1: "💫 Rare", 2: "🌿 Medium", 3: "🦄 Legendary", 4:"💮 Special Edition", 5: "🔮 Limited Edition", 6: "🎉 Festival", 7: "🍂 Seasonal", 8: "🎐 Celestial"}
+            rarity_map = {1: "⚪ Common", 2: "🟠 Rare", 3: "🟡 Legendary", 4: "🟢 Medium", 5: "💠 Cosmic",6: "💮 Exclusive", 7: "🔮 Limited Edition"}
             try:
                 new_value = rarity_map[int(args[2])]
             except KeyError:
