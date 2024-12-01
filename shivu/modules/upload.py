@@ -29,7 +29,7 @@ rarity_map = {1: "💫 Rare", 2: "🌿 Medium", 3: "🦄 Legendary", 4:"💮 Spe
 
 
 # Define the channel ID and rarity map
-CHARA_CHANNEL_ID = -1002428503112
+CHARA_CHANNEL_ID = -1002412957777
 rarity_map = {1: "💫 Rare", 2: "🌿 Medium", 3: "🦄 Legendary", 4:"💮 Special Edition", 5: "🔮 Limited Edition", 6: "🎉 Festival", 7: "🍂 Seasonal", 8: "🎐 Celestial"}
 
 
