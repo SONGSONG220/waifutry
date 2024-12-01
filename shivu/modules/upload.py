@@ -135,10 +135,6 @@ async def ul(client, message):
         except Exception as e:
             await message.reply_text(f"Character Upload Unsuccessful. Error: {str(e)}")
         
-        finally:
-            os.remove(path)  # Clean up the downloaded file
-            async with id_lock:
-                active_ids.discard(available_id)  # Remove the ID from the active set once done
     else:
         await message.reply_text("Please reply to a photo or document.")
 
