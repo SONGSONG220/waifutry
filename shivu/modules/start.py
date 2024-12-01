@@ -32,7 +32,7 @@ async def start(update: Update, context: CallbackContext) -> None:
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━⧫
 ┠ ➻  I ᴡɪʟʟ Sᴜᴍᴍᴏɴ Wᴀɪғᴜ Cʜᴀʀᴀᴄᴛᴇʀs Iɴ
 ┃        ʏᴏᴜʀ Gʀᴏᴜᴘ Cʜᴀᴛ. 
-┠ ➻  Yᴏᴜ ᴄᴀɴ ᴄᴀᴘᴛᴜʀᴇ ᴛʜᴇᴍ ʙʏ /capture ᴄᴏᴍᴍᴀɴᴅ 
+┠ ➻  Yᴏᴜ ᴄᴀɴ ᴄᴀᴘᴛᴜʀᴇ ᴛʜᴇᴍ ʙʏ /collect ᴄᴏᴍᴍᴀɴᴅ 
 ┃         ᴀɴᴅ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ʜᴀʀᴇᴍ.
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━⧫
   Tᴀᴘ ᴏɴ "Hᴇʟᴘ" ғᴏʀ ᴍᴏʀᴇ ᴄᴏᴍᴍᴀɴᴅs."""
@@ -71,7 +71,7 @@ async def button(update: Update, context: CallbackContext) -> None:
         help_text = """
     ***Help Section:***
 
-***/capture: To capture character (only works in group)***
+***/collect: To capture character (only works in group)***
 ***/fav: Add Your fav***
 ***/trade : To trade Characters***
 ***/gift: Give any Character from Your Collection to another user.. (only works in groups)***
@@ -94,7 +94,7 @@ async def button(update: Update, context: CallbackContext) -> None:
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━⧫
 ┠ ➻  I ᴡɪʟʟ Sᴜᴍᴍᴏɴ Wᴀɪғᴜ Cʜᴀʀᴀᴄᴛᴇʀs Iɴ
 ┃        ʏᴏᴜʀ Gʀᴏᴜᴘ Cʜᴀᴛ. 
-┠ ➻  Yᴏᴜ ᴄᴀɴ sᴇᴀʟ ᴛʜᴇᴍ ʙʏ /capture ᴄᴏᴍᴍᴀɴᴅ 
+┠ ➻  Yᴏᴜ ᴄᴀɴ sᴇᴀʟ ᴛʜᴇᴍ ʙʏ /collect ᴄᴏᴍᴍᴀɴᴅ 
 ┃         ᴀɴᴅ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ʜᴀʀᴇᴍ.
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━⧫
   Tᴀᴘ ᴏɴ "Hᴇʟᴘ" ғᴏʀ ᴍᴏʀᴇ ᴄᴏᴍᴍᴀɴᴅs.***
@@ -102,8 +102,8 @@ async def button(update: Update, context: CallbackContext) -> None:
 
         keyboard = [
             [InlineKeyboardButton("➕ 𝖠𝖽𝖽 𝖬𝖾 I𝗇 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url=f'http://t.me/capture_Waifu_Bot?startgroup=new')],
-            [InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 🍁", url=f'https://t.me/capture_your_WH_gc'),
-             InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📈", url=f'https://t.me/luffy_bots')],
+            [InlineKeyboardButton("𝖲𝗎𝗉𝗉𝗈𝗋𝗍 🍁", url=f'https://t.me/PiratesMainchat'),
+             InlineKeyboardButton("𝖴𝗉𝖽𝖺𝗍𝖾𝗌 📈", url=f'https://t.me/PiratesBotRepo')],
             [InlineKeyboardButton("𝖧𝖾𝗅𝗉 ⚙️", callback_data='help')]
         ]
         reply_markup = InlineKeyboardMarkup(keyboard)
@@ -116,7 +116,7 @@ async def waifu_help(update: Update, context: CallbackContext) -> None:
     help_text = """
     ***Waifu Help Section:***
 
-***/capture: To capture character (only works in group)***
+***/collect: To capture character (only works in group)***
 ***/fav: Add Your fav***
 ***/trade : To trade Characters***
 ***/gift: Give any Character from Your Collection to another user.. (only works in groups)***
